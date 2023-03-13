@@ -1,2 +1,9 @@
-package com.pedrocelio.ticket.repository;public interface ticketRepository {
+package com.pedrocelio.ticket.repository;
+
+import com.pedrocelio.ticket.entities.Ticket;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface TicketRepository extends JpaRepository<Ticket, Long> {
 }
